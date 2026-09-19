@@ -88,6 +88,7 @@ this: derived-ness is implicit in which strategy kind resolves the control.
 from __future__ import annotations
 
 import re
+from pathlib import Path
 from dataclasses import dataclass, field
 from typing import Any, Iterable, Sequence
 
@@ -405,11 +406,14 @@ class WebSurface:
         base_url: str | None = None,
         slow_mo_ms: int = 0,
         viewport: tuple[int, int] = (1280, 900),
+        record_video_dir: str | Path | None = None,
     ) -> None:
         self.headless = headless
         self.base_url = base_url.rstrip("/") if base_url else None
         self.slow_mo_ms = slow_mo_ms
         self.viewport = viewport
+        self.record_video_dir = Path(record_video_dir) if record_video_dir else None
+        self.recorded_video_path: Path | None = None
 
         self._pw: Any = None
         self._browser: Browser | None = None
@@ -429,9 +433,16 @@ class WebSurface:
         self._browser = self._pw.chromium.launch(
             headless=self.headless, slow_mo=self.slow_mo_ms or 0
         )
-        self._context = self._browser.new_context(
-            viewport={"width": self.viewport[0], "height": self.viewport[1]}
-        )
+        context_options: dict[str, Any] = {
+            "viewport": {"width": self.viewport[0], "height": self.viewport[1]}
+        }
+        if self.record_video_dir is not None:
+            self.record_video_dir.mkdir(parents=True, exist_ok=True)
+            context_options["record_video_dir"] = str(self.record_video_dir)
+            context_options["record_video_size"] = {
+                "width": self.viewport[0], "height": self.viewport[1]
+            }
+        self._context = self._browser.new_context(**context_options)
         self._page = self._context.new_page()
 
     def close(self) -> None:
@@ -440,12 +451,18 @@ class WebSurface:
         Close is called on the failure path too, so it must never raise and mask the
         original exception.
         """
+        video = self._page.video if self._page is not None else None
         for closer in (self._context, self._browser):
             try:
                 if closer is not None:
                     closer.close()
             except Exception:
                 pass
+        if video is not None:
+            try:
+                self.recorded_video_path = Path(video.path())
+            except Exception:
+                self.recorded_video_path = None
         try:
             if self._pw is not None:
                 self._pw.stop()

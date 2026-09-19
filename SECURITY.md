@@ -2,8 +2,9 @@
 
 ## Scope
 
-This repository is an educational prototype operating against generated mock-bank data. It
-is not approved for real financial data or production systems.
+This repository is an educational prototype operating against a simulated legacy banking
+and finance application containing generated data. It is not approved for real financial
+data or production systems.
 
 ## Reporting
 

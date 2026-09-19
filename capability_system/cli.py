@@ -85,7 +85,11 @@ def cmd_discover(args: argparse.Namespace) -> int:
         capture_page_source=args.synthetic_evidence,
     )
 
-    with WebSurface(headless=not args.headed, slow_mo_ms=args.slow_mo) as surface:
+    with WebSurface(
+        headless=not args.headed,
+        slow_mo_ms=args.slow_mo,
+        record_video_dir=args.record_video,
+    ) as surface:
         agent = DiscoveryAgent(
             surface=surface, provider=provider,
             policy=_policy([origin], allow_risky=False),
@@ -113,6 +117,8 @@ def cmd_discover(args: argparse.Namespace) -> int:
     print(f"outputs   : {[o.name for o in artifact.outputs]}")
     print(f"approval  : {artifact.approval.value}  (replay requires --allow-draft until approved)")
     print(f"evidence  : {recorder.run_dir}")
+    if surface.recorded_video_path:
+        print(f"video     : {surface.recorded_video_path}")
     return 0
 
 
@@ -132,7 +138,11 @@ def cmd_replay(args: argparse.Namespace) -> int:
         capture_page_source=args.synthetic_evidence,
     )
 
-    with WebSurface(headless=not args.headed, slow_mo_ms=args.slow_mo) as surface:
+    with WebSurface(
+        headless=not args.headed,
+        slow_mo_ms=args.slow_mo,
+        record_video_dir=args.record_video,
+    ) as surface:
         controller = None
         if args.escalate:
             controller = SessionController(
@@ -164,6 +174,8 @@ def cmd_replay(args: argparse.Namespace) -> int:
         print(f"  observed: {result.observed}")
     print(f"steps     : {len(result.trace)}")
     print(f"evidence  : {recorder.run_dir}")
+    if surface.recorded_video_path:
+        print(f"video     : {surface.recorded_video_path}")
 
     # A business outcome is a correct answer, so it exits 0. Only a hard failure is an
     # error for a shell caller; escalation is "in flight", which is also not success.
@@ -240,6 +252,7 @@ def main(argv: list[str] | None = None) -> int:
     d.add_argument("--max-steps", type=int, default=25)
     d.add_argument("--headed", action="store_true")
     d.add_argument("--slow-mo", type=int, default=0)
+    d.add_argument("--record-video", metavar="DIR", help="write a WebM recording to DIR")
     d.add_argument(
         "--synthetic-evidence",
         action="store_true",
@@ -258,6 +271,7 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("--escalate", action="store_true", help="enable human handoff")
     r.add_argument("--headed", action="store_true")
     r.add_argument("--slow-mo", type=int, default=0)
+    r.add_argument("--record-video", metavar="DIR", help="write a WebM recording to DIR")
     r.add_argument(
         "--synthetic-evidence",
         action="store_true",

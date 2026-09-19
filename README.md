@@ -1,13 +1,29 @@
-# Computer-Use Capability System
+# AI Automation for Legacy Software Without APIs
 
-An LLM drives a hostile legacy UI once. The successful run is compiled into a typed,
-versioned capability artifact. Approved artifacts then replay deterministically with no
-model in the execution path, bounded recovery, policy enforcement, evidence, and human
-handoff.
+Many business-critical applications in healthcare, finance, insurance, government, and
+manufacturing have no usable API, stable selectors, or a modern frontend. This project
+demonstrates how AI can learn a workflow by operating that software through its user
+interface, then compile the successful run into a reusable automation.
 
-This is an educational prototype built against a synthetic banking application. It is not
-production banking software and must not be connected to real customer systems without a
-security, privacy, and operational review.
+AI is used during discovery, where it observes the interface and decides what to do.
+Approved workflows then replay deterministically without a model, making repeated execution
+faster, cheaper, auditable, and easier to govern. When automation cannot proceed safely, it
+hands the same live session to a human operator.
+
+The included test environment is a **simulated legacy banking and finance application**. It
+contains generated data only and exists to reproduce difficult enterprise UI conditions;
+the project is not connected to any real financial institution or customer system. The
+same architecture is intended for comparable legacy workflows across other regulated and
+operational domains.
+
+## See It Work
+
+![AI discovers a workflow in a simulated legacy banking and finance application](docs/ai-discovery-demo.gif)
+
+In this real discovery run, `ollama/gemma4:31b-cloud` observes the simulated legacy UI and
+chooses `type -> click -> read -> done`. The compiler then produces a draft capability.
+After human approval, the same workflow can run repeatedly without a model.
+[Watch the MP4](docs/ai-discovery-demo.mp4).
 
 ```text
 goal -> discovery model -> draft artifact -> human approval -> deterministic replay
@@ -32,9 +48,10 @@ python3 mock_bank/server.py
 curl -s http://127.0.0.1:8099/health
 ```
 
-The target deliberately uses framesets, table layout, duplicate labels, and no test IDs or
-ARIA annotations. Seed member IDs are synthetic: `12345` and `23456` return different
-balances, `99999` is denied, and unknown IDs return a business outcome.
+The simulated application deliberately uses framesets, table layout, duplicate labels, and
+no test IDs or ARIA annotations. These reproduce common constraints in older enterprise
+software. All member records and balances are generated test data: `12345` and `23456`
+return different balances, `99999` is denied, and unknown IDs return a business outcome.
 
 ## Model Privacy
 
@@ -72,6 +89,8 @@ python3 -m capability_system.cli discover \
   --sensitive member_id \
   --synthetic-evidence
 ```
+
+Add `--record-video recordings/` to save a WebM recording of any discovery or replay.
 
 `--synthetic-evidence` permits full observations, screenshots, and failure page source. It
 must only be used with generated test data. Without it, dynamic content is minimized and
@@ -166,7 +185,7 @@ capability_system/
   evidence/       append-only, privacy-aware run recorder
 capabilities/     reviewed capability artifacts
 evidence/         ten curated synthetic runs and their index
-mock_bank/        synthetic legacy target with injectable faults
+mock_bank/        simulated legacy banking and finance UI with injectable faults
 scripts/          end-to-end handoff demo
 tests/            unit and browser integration tests
 ```
