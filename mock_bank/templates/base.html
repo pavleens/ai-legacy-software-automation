@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>{% block title %}Member Services Terminal{% endblock %}</title>
+<style type="text/css">
+body { background: #d4d0c8; font-family: Verdana, Geneva, sans-serif; font-size: 11px; color: #000000; margin: 0px; }
+td { font-family: Verdana, Geneva, sans-serif; font-size: 11px; }
+.f1 { font-family: Verdana, Geneva, sans-serif; font-size: 11px; }
+.c2 { color: #000040; }
+.c3 { color: #7a0000; font-weight: bold; }
+.hd9 { background: #000080; color: #ffffff; font-weight: bold; padding: 3px 6px; }
+.sb4 { background: #b8b4ac; font-weight: bold; padding: 2px 5px; }
+.rw0 { background: #e8e6e0; }
+.rw1 { background: #dcd9d2; }
+.btn7 { font-family: Verdana, Geneva, sans-serif; font-size: 11px; background: #c0c0c0; border: 2px outset #ffffff; padding: 1px 8px; }
+.inp3 { font-family: "Courier New", monospace; font-size: 11px; border: 2px inset #808080; background: #ffffff; }
+.wrn5 { background: #ffffcc; border: 1px solid #808080; padding: 5px; color: #7a0000; font-weight: bold; }
+.ft8 { font-size: 10px; color: #505050; }
+a:link, a:visited { color: #000080; }
+</style>
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td class="hd9">MERIDIAN CREDIT UNION &nbsp;&#183;&nbsp; MEMBER SERVICES TERMINAL &nbsp;&#183;&nbsp; REL 4.2.1c</td></tr>
+<tr><td class="sb4">{% block crumb %}&nbsp;{% endblock %}</td></tr>
+</table>
+<table width="100%" cellpadding="8" cellspacing="0" border="0">
+<tr><td>
+{% block content %}{% endblock %}
+</td></tr>
+</table>
+<table width="100%" cellpadding="4" cellspacing="0" border="0">
+<tr><td class="ft8">Terminal session TS-40928 &nbsp;|&nbsp; Operator: TELLER07 &nbsp;|&nbsp; Branch 0041 &nbsp;|&nbsp; Unauthorised access is prohibited.</td></tr>
+</table>
+</body>
+</html>

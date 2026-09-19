@@ -1,0 +1,7 @@
+# Three dependencies. Deliberately.
+playwright>=1.60        # >=1.57 removed page.accessibility; >=1.59 adds aria_snapshot mode/depth
+pydantic>=2.0           # typed artifact contract and model decision schemas
+flask>=3.0              # mock_bank target only, not used by capability_system
+
+# dev
+pytest>=7.4

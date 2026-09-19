@@ -1,0 +1,8 @@
+{"ts": "2026-09-19T22:48:58.492327Z", "seq": 1, "kind": "run_started", "run_kind": "replay", "capability_id": "lookup_member_balance", "goal": null}
+{"ts": "2026-09-19T22:48:58.759700Z", "seq": 2, "kind": "replay_started", "capability_id": "lookup_member_balance", "capability_version": 2, "tenant_id": null, "approval": "approved", "steps": 4}
+{"ts": "2026-09-19T22:48:58.780420Z", "seq": 3, "kind": "step", "index": 0, "step_id": "s000", "dir": "000-s000", "files": ["observation.json", "action.json"], "action": {"kind": "navigate", "handle": null, "text": "http://127.0.0.1:8099/app", "option": null}}
+{"ts": "2026-09-19T22:48:58.905356Z", "seq": 4, "kind": "step", "index": 1, "step_id": "s001", "dir": "001-s001", "files": ["observation.json", "action.json"], "action": {"kind": "type", "handle": "f2|aria-ref=f2e19", "text": "12345", "option": null}}
+{"ts": "2026-09-19T22:48:59.004269Z", "seq": 5, "kind": "step", "index": 2, "step_id": "s002", "dir": "002-s002", "files": ["observation.json", "action.json"], "action": {"kind": "click", "handle": "f2|aria-ref=f2e27", "text": null, "option": null}}
+{"ts": "2026-09-19T22:48:59.099194Z", "seq": 6, "kind": "step", "index": 3, "step_id": "s003", "dir": "003-s003", "files": ["observation.json", "action.json"], "action": {"kind": "read", "handle": "f2|aria-ref=f2e48", "text": null, "option": null}}
+{"ts": "2026-09-19T22:48:59.135984Z", "seq": 7, "kind": "replay_succeeded", "outputs": ["savings_balance"]}
+{"ts": "2026-09-19T22:48:59.156648Z", "seq": 8, "kind": "run_finished", "status": "success", "counts": {"events": 7, "steps": 4, "failure_signals": 0}}

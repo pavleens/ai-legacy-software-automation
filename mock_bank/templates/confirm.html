@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Sub-Account Opened{% endblock %}
+{% block crumb %}CONFIRMATION{% endblock %}
+{% block content %}
+<table width="600" cellpadding="6" cellspacing="0" border="1">
+  <tr><td class="sb4">Transaction Accepted</td></tr>
+  <tr class="rw0"><td class="f1 c2">The sub-account has been queued for posting in tonight's batch.</td></tr>
+  <tr class="rw1"><td><b>Reference: {{ reference }}</b></td></tr>
+</table>
+<br>
+<table width="600" cellpadding="4" cellspacing="0" border="1">
+  <tr><td class="sb4" colspan="2">Submitted Values</td></tr>
+  <tr class="rw0"><td width="190" class="f1 c2">Member</td><td>{{ member.name }} ({{ member_id }})</td></tr>
+  <tr class="rw1"><td class="f1 c2">Account Type</td><td>{{ acct_type }}</td></tr>
+  <tr class="rw0"><td class="f1 c2">Nickname</td><td>{{ nickname }}</td></tr>
+  <tr class="rw1"><td class="f1 c2">Initial Deposit Amount</td><td><tt>{{ deposit }}</tt> CAD</td></tr>
+</table>
+<br>
+<table width="600" cellpadding="4" cellspacing="0" border="0">
+<tr>
+  <td><a href="/app/member?member_id={{ member_id }}">Return to Member Detail</a></td>
+  <td><a href="/app/search">New Search</a></td>
+  <td align="right" class="ft8">Print copy to LPT2 for the member file.</td>
+</tr>
+</table>
+{% endblock %}

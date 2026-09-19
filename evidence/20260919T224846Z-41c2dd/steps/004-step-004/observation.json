@@ -1,0 +1,751 @@
+{
+  "url": "http://127.0.0.1:8099/app",
+  "title": "Meridian Credit Union :: Member Services Terminal",
+  "elements": [
+    {
+      "handle": "f1|aria-ref=f1e4",
+      "role": "row",
+      "name": "MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e5",
+      "role": "cell",
+      "name": "MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e6",
+      "role": "row",
+      "name": "MENU",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e7",
+      "role": "cell",
+      "name": "MENU",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e14",
+      "role": "row",
+      "name": "FUNCTIONS",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e15",
+      "role": "cell",
+      "name": "FUNCTIONS",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e18",
+      "role": "link",
+      "name": "Member Search",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e21",
+      "role": "link",
+      "name": "Recent: 12345",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e24",
+      "role": "link",
+      "name": "Recent: 23456",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e27",
+      "role": "link",
+      "name": "Search",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e28",
+      "role": "row",
+      "name": "Statements (offline)",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e29",
+      "role": "cell",
+      "name": "Statements (offline)",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e30",
+      "role": "row",
+      "name": "Wire Desk (offline)",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e31",
+      "role": "cell",
+      "name": "Wire Desk (offline)",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e34",
+      "role": "row",
+      "name": "BRANCH CONTEXT",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e35",
+      "role": "cell",
+      "name": "BRANCH CONTEXT",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e36",
+      "role": "row",
+      "name": "Branch | 0041 Riverbend",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e37",
+      "role": "cell",
+      "name": "Branch",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e38",
+      "role": "cell",
+      "name": "0041 Riverbend",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e39",
+      "role": "combobox",
+      "name": "Branch",
+      "value": "0041 Riverbend",
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e42",
+      "role": "button",
+      "name": "Submit",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e45",
+      "role": "row",
+      "name": "Help desk ext. 4412 Printer queue LPT2",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / Help desk ext. 4412 Printer queue LPT2",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e46",
+      "role": "cell",
+      "name": "Help desk ext. 4412 Printer queue LPT2",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / Help desk ext. 4412 Printer queue LPT2",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e49",
+      "role": "row",
+      "name": "Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited.",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e50",
+      "role": "cell",
+      "name": "Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited.",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e4",
+      "role": "row",
+      "name": "MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 1
+    },
+    {
+      "handle": "f2|aria-ref=f2e5",
+      "role": "cell",
+      "name": "MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 1
+    },
+    {
+      "handle": "f2|aria-ref=f2e6",
+      "role": "row",
+      "name": "MEMBER DETAIL — 12345",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e7",
+      "role": "cell",
+      "name": "MEMBER DETAIL — 12345",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e14",
+      "role": "row",
+      "name": "Member Record",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e15",
+      "role": "cell",
+      "name": "Member Record",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e16",
+      "role": "row",
+      "name": "Member Name | Dolores A. Kettleman | Member ID | 12345",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e17",
+      "role": "cell",
+      "name": "Member Name",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e18",
+      "role": "cell",
+      "name": "Dolores A. Kettleman",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e19",
+      "role": "cell",
+      "name": "Member ID",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e20",
+      "role": "cell",
+      "name": "12345",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e21",
+      "role": "row",
+      "name": "Branch | 0041 - Riverbend | Status | ACTIVE",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e22",
+      "role": "cell",
+      "name": "Branch",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 1
+    },
+    {
+      "handle": "f2|aria-ref=f2e23",
+      "role": "cell",
+      "name": "0041 - Riverbend",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e24",
+      "role": "cell",
+      "name": "Status",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e25",
+      "role": "cell",
+      "name": "ACTIVE",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e26",
+      "role": "row",
+      "name": "Joined | 1998-03-14 | Hold Flags | NONE",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e27",
+      "role": "cell",
+      "name": "Joined",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e28",
+      "role": "cell",
+      "name": "1998-03-14",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e29",
+      "role": "cell",
+      "name": "Hold Flags",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e30",
+      "role": "cell",
+      "name": "NONE",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Member Record",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e33",
+      "role": "row",
+      "name": "Accounts On File",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e34",
+      "role": "cell",
+      "name": "Accounts On File",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e35",
+      "role": "row",
+      "name": "Account No. | Type | Balance (CAD) | Opened",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e36",
+      "role": "cell",
+      "name": "Account No.",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e37",
+      "role": "cell",
+      "name": "Type",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e38",
+      "role": "cell",
+      "name": "Balance (CAD)",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e39",
+      "role": "cell",
+      "name": "Opened",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e40",
+      "role": "row",
+      "name": "0041-12345-01 | Chequing | 1,284.55 | 1998-03-14",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e41",
+      "role": "cell",
+      "name": "0041-12345-01",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e42",
+      "role": "cell",
+      "name": "Chequing",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e43",
+      "role": "cell",
+      "name": "1,284.55",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e44",
+      "role": "cell",
+      "name": "1998-03-14",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 1
+    },
+    {
+      "handle": "f2|aria-ref=f2e45",
+      "role": "row",
+      "name": "0041-12345-02 | Savings | 18,430.09 | 2004-11-02",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e46",
+      "role": "cell",
+      "name": "0041-12345-02",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e47",
+      "role": "cell",
+      "name": "Savings",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e48",
+      "role": "cell",
+      "name": "18,430.09",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e49",
+      "role": "cell",
+      "name": "2004-11-02",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e50",
+      "role": "row",
+      "name": "0041-12345-07 | Term Deposit | 5,000.00 | 2019-06-30",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e51",
+      "role": "cell",
+      "name": "0041-12345-07",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e52",
+      "role": "cell",
+      "name": "Term Deposit",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e53",
+      "role": "cell",
+      "name": "5,000.00",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e54",
+      "role": "cell",
+      "name": "2019-06-30",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail / Accounts On File",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e57",
+      "role": "row",
+      "name": "Record read from MBRMAST at 09:42:11",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e60",
+      "role": "button",
+      "name": "Open Sub-Account",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e62",
+      "role": "link",
+      "name": "Back to Search",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e63",
+      "role": "cell",
+      "name": "Record read from MBRMAST at 09:42:11",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e66",
+      "role": "row",
+      "name": "Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited.",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail",
+      "ordinal": 1
+    },
+    {
+      "handle": "f2|aria-ref=f2e67",
+      "role": "cell",
+      "name": "Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited.",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Detail",
+      "ordinal": 1
+    }
+  ],
+  "text_digest": "MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c MENU FUNCTIONS Member Search Recent: 12345 Recent: 23456 Search Statements (offline) Wire Desk (offline) BRANCH CONTEXT Branch 0041 Riverbend 0012 Mill Street 0007 Old Post Road Help desk ext. 4412 Printer queue LPT2 Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited. MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c MEMBER DETAIL — 12345 Member Record Member Name Dolores A. Kettleman Member ID 12345 Branch 0041 - Riverbend Status ACTIVE Joined 1998-03-14 Hold Flags NONE Accounts On File Account No. Type Balance (CAD) Opened 0041-12345-01 Chequing 1,284.[REDACTED:CARD]02 Savings 18,430.[REDACTED:CARD]07 Term Deposit 5,000.00 2019-06-30 Back to Search Record read from MBRMAST at 09:42:11 Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited.",
+  "screenshot_path": null,
+  "elements_total": 74,
+  "elements_truncated": false,
+  "element_cap": 80
+}

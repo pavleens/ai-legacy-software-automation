@@ -1,0 +1,25 @@
+{
+  "run_id": "20260919T225012Z-cd987f",
+  "kind": "replay",
+  "status": "hard_failure",
+  "capability_id": "lookup_member_balance",
+  "capability_version": 2,
+  "finished_at": "2026-09-19T22:50:12.324604Z",
+  "result": {
+    "status": "hard_failure",
+    "capability_id": "lookup_member_balance",
+    "capability_version": 2,
+    "outputs": {},
+    "outcome_code": null,
+    "outcome_description": null,
+    "failure_kind": "invalid_input",
+    "failed_step_id": null,
+    "expected": "inputs matching contract ['member_id']",
+    "observed": "missing required: ['member_id']",
+    "escalation_id": null,
+    "trace": [],
+    "evidence_dir": "evidence/20260919T225012Z-cd987f",
+    "started_at": "2026-09-19T22:50:12.306207Z",
+    "elapsed_ms": 0
+  }
+}

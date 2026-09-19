@@ -1,0 +1,24 @@
+{
+  "id": "iv_d199cf6ff086",
+  "session_id": "20260919T231312Z-cfd901",
+  "capability_id": "lookup_member_balance",
+  "capability_version": 2,
+  "goal": "Look up a member and read their current savings balance",
+  "step_id": "s003",
+  "step_intent": "",
+  "reason": "policy_requires_confirmation",
+  "detail": "Step s003 () is classified risky_irreversible. Step is classified irreversible and unattended risky actions are off",
+  "current_url": "http://127.0.0.1:8099/app",
+  "observation_digest": "URL: http://127.0.0.1:8099/app\nTITLE: Meridian Credit Union :: Member Services Terminal\nELEMENTS:\n  [f1|aria-ref=f1e4] row 'MERIDIAN CREDIT UNION \u00b7 MEMBER SERVICES TERMINAL \u00b7 REL 4.2.1c' in='Navigation / MERIDIAN CREDIT UNION \u00b7 MEMBER SERVICES TERMINAL \u00b7 REL 4.2.1c'\n  [f1|aria-ref=f1e5] cell 'MERIDIAN CREDIT UNION \u00b7 MEMBER SERVICES TERMINAL \u00b7 REL 4.2.1c' in='Navigation / MERIDIAN CREDIT UNION \u00b7 MEMBER SERVICES TERMINAL \u00b7 REL 4.2.1c'\n  [f1|aria-ref=f1e6] row 'MENU' in='Navigation / MERIDIAN CREDIT UNION \u00b7 MEMBER SERVICES TERMINAL \u00b7 REL 4.2.1c'\n  [f1|aria-ref=f1e7] cell 'MENU' in='Navigation / MERIDIAN CREDIT UNION \u00b7 MEMBER SERVICES TERMINAL \u00b7 REL 4.2.1c'\n  [f1|aria-ref=f1e14] row 'FUNCTIONS' in='Navigation / FUNCTIONS'\n  [f1|aria-ref=f1e15] cell 'FUNCTIONS' in='Navigation / FUNCTIONS'\n  [f1|aria-ref=f1e18] link 'Member Search' in='Navigation / FUNCTIONS'\n  [f1|aria-ref=f1e21] link 'Recent: 12345' in='Navigation / FUNCTIONS'\n  [f1|aria-ref=f1e24] link 'Recent: 23456' in='Navigation / FUNCTIONS'\n  [f1|aria-ref=f1e27] link 'Search' in='Navigation / FUNCTIONS'\n  [f1|aria-ref=f1e28] row 'Statements (offline)' in='Navigation / FUNCTIONS'\n  [f1|aria-ref=f1e29] cell 'Statements (offline)' in='Navigation / FUNCTIONS'\n  [f1|aria-ref=f1e30] row 'Wire Desk (offline)' in='Navigation / FUNCTIONS'\n  [f1|aria-ref=f1e31] cell 'Wire Desk (offline)' in='Navigation / FUNCTIONS'\n  [f1|aria-ref=f1e34] row 'BRANCH CONTEXT' in='Navigation / BRANCH CONTEXT'\n  [f1|aria-ref=f1e35] cell 'BRANCH CONTEXT' in='Navigation / BRANCH CONTEXT'\n  [f1|aria-ref=f1e36] row 'Branch | 0041 Riverbend' in='Navigation / BRANCH CONTEXT'\n  [f1|aria-ref=f1e37] cell 'Branch' in='Navigation / BRANCH CONTEXT'\n  [f1|aria-ref=f1e38] cell '0041 Riverbend' in='Navigation / BRANCH CONTEXT'\n  [f1|aria-ref=f1e39] combobox 'Branch' value='0041 Riverbend' in='Navigation / BRANCH CONTEXT'\n  [f1|aria-ref=f1e42] button 'Submit' in='Navigation / BRANCH CONTEXT'\n  [f1|aria-ref=f1e45] row 'Help desk ext. 4412 Printer queue LPT2' in='Navigation / Help desk ext. 4412 Printer queue LPT2'\n  [f1|aria-ref=f1e46] cell 'Help desk ext. 4412 Printer queue LPT2' in='Navigation / Help desk ext. 4412 Printer queue LPT2'\n  [f1|aria-ref=f1e49] row 'Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited.' in='Navigation'\n  [f1|aria-ref=f1e50] cell 'Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited.' in='Navigation'\n  ... 49 more elements omitted",
+  "screenshot_path": null,
+  "evidence_dir": "evidence/20260919T231312Z-cfd901",
+  "suggested_action": "Review the pending action and either complete it yourself or resolve the request to authorise the automation to proceed.",
+  "status": "resolved",
+  "resolution": "performed",
+  "created_at": "2026-09-19T23:13:13.489618Z",
+  "resolved_at": "2026-09-19T23:13:15.774907Z",
+  "operator_note": "authorised and completed the step myself in the live session",
+  "operator_outputs": {
+    "savings_balance": "18,430.09"
+  }
+}

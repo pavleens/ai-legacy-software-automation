@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Session Notice{% endblock %}
+{% block crumb %}SESSION NOTICE{% endblock %}
+{% block content %}
+<table width="600" cellpadding="6" cellspacing="0" border="1">
+  <tr><td class="sb4">Attention</td></tr>
+  <tr class="rw0"><td class="wrn5">Your session will expire soon.</td></tr>
+  <tr class="rw1"><td class="f1 c2">Terminal session TS-40928 is approaching its idle limit. Click Continue to extend the session and proceed to the requested screen. Any form data you entered will be carried forward.</td></tr>
+  <tr class="rw0"><td>
+    <form action="{{ target }}" method="{{ 'post' if method == 'POST' else 'get' }}">
+      {% for k, v in fields %}
+      <input type="hidden" name="{{ k }}" value="{{ v }}">
+      {% endfor %}
+      <input type="hidden" name="_ack" value="1">
+      <input type="submit" class="btn7" value="Continue">
+    </form>
+  </td></tr>
+</table>
+<br>
+<table width="600" cellpadding="4" cellspacing="0" border="0">
+<tr><td class="ft8">Idle limit 00:12:00 &#183; extension grants 00:20:00</td></tr>
+</table>
+{% endblock %}

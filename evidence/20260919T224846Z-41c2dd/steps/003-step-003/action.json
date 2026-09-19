@@ -1,0 +1,9 @@
+{
+  "reasoning": "",
+  "action": "read",
+  "handle": "f2|aria-ref=f2e48",
+  "text": null,
+  "option": null,
+  "risk": "safe_reversible",
+  "extract_as": "savings_balance"
+}

@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0",
+  "id": "lookup_member_balance",
+  "version": 2,
+  "name": "Lookup Member Balance",
+  "description": "Look up a member and read their current savings balance",
+  "surface": {
+    "kind": "web",
+    "product": "mock-core-banking",
+    "product_version": null,
+    "recorded_origin": "http://127.0.0.1:8099"
+  },
+  "approval": "approved",
+  "inputs": [
+    {
+      "name": "member_id",
+      "type": "string",
+      "required": true,
+      "description": "Member identifier supplied by the caller.",
+      "example": null,
+      "sensitive": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "savings_balance",
+      "type": "money",
+      "description": "Read from the surface during discovery.",
+      "from_step": "s003",
+      "required": true,
+      "sensitive": true
+    }
+  ],
+  "steps": [
+    {
+      "id": "s000",
+      "intent": "Open the application at its recorded entry point.",
+      "action": "navigate",
+      "target": null,
+      "literal": "http://127.0.0.1:8099/app",
+      "binds_input": null,
+      "reads_into": null,
+      "risk": "safe_reversible",
+      "wait_for": null
+    },
+    {
+      "id": "s001",
+      "intent": "",
+      "action": "type",
+      "target": {
+        "description": "Member ID",
+        "strategies": [
+          {
+            "kind": "label",
+            "value": "Member ID",
+            "container": null,
+            "ordinal": null,
+            "confidence": 0.85,
+            "rationale": "No accessible name: the visible label 'Member ID' is adjacent text with no for=/id= pairing, so it is recovered by the proximity pass at replay time rather than by a role+name lookup."
+          },
+          {
+            "kind": "container_role_name",
+            "value": "textbox|Member ID",
+            "container": "Member Search / Search \u2014 Primary Index",
+            "ordinal": null,
+            "confidence": 0.7,
+            "rationale": "textbox 'Member ID' scoped to 'Member Search / Search \u2014 Primary Index'; disambiguates duplicate labels that sit in different frames or sections."
+          },
+          {
+            "kind": "ordinal",
+            "value": "textbox|Member ID",
+            "container": null,
+            "ordinal": 0,
+            "confidence": 0.25,
+            "rationale": "Positional last resort: match #0 of textbox 'Member ID' in document order across frames. The only strategy permitted to resolve ambiguity."
+          }
+        ]
+      },
+      "literal": null,
+      "binds_input": "member_id",
+      "reads_into": null,
+      "risk": "safe_reversible",
+      "wait_for": null
+    },
+    {
+      "id": "s002",
+      "intent": "",
+      "action": "click",
+      "target": {
+        "description": "button|Search",
+        "strategies": [
+          {
+            "kind": "role_name",
+            "value": "button|Search",
+            "container": null,
+            "ordinal": null,
+            "confidence": 0.95,
+            "rationale": "Chromium exposes this as button named 'Search', unique on screen. Portable to UI Automation and AT-SPI verbatim."
+          },
+          {
+            "kind": "container_role_name",
+            "value": "button|Search",
+            "container": "Member Search / Search \u2014 Primary Index",
+            "ordinal": null,
+            "confidence": 0.7,
+            "rationale": "button 'Search' scoped to 'Member Search / Search \u2014 Primary Index'; disambiguates duplicate labels that sit in different frames or sections."
+          },
+          {
+            "kind": "ordinal",
+            "value": "button|Search",
+            "container": null,
+            "ordinal": 0,
+            "confidence": 0.25,
+            "rationale": "Positional last resort: match #0 of button 'Search' in document order across frames. The only strategy permitted to resolve ambiguity."
+          }
+        ]
+      },
+      "literal": null,
+      "binds_input": null,
+      "reads_into": null,
+      "risk": "safe_reversible",
+      "wait_for": null
+    },
+    {
+      "id": "s003",
+      "intent": "",
+      "action": "read",
+      "target": {
+        "description": "Savings|Balance (CAD)",
+        "strategies": [
+          {
+            "kind": "row_column",
+            "value": "Savings|Balance (CAD)",
+            "container": "Member Detail / Accounts On File",
+            "ordinal": 2,
+            "confidence": 0.8,
+            "rationale": "Structural: cell in column #2 of the row keyed 'Savings', within 'Member Detail / Accounts On File'; the column header survives column moves and the target carries no record value."
+          },
+          {
+            "kind": "row_column",
+            "value": "Savings|",
+            "container": "Member Detail / Accounts On File",
+            "ordinal": 2,
+            "confidence": 0.6,
+            "rationale": "Structural index fallback for the same cell when the header text changes; the target carries no record value."
+          }
+        ]
+      },
+      "literal": null,
+      "binds_input": null,
+      "reads_into": "savings_balance",
+      "risk": "safe_reversible",
+      "wait_for": null
+    }
+  ],
+  "checkpoint": {
+    "kind": "element_present",
+    "value": "Savings|Balance (CAD)",
+    "target": {
+      "description": "Savings|Balance (CAD)",
+      "strategies": [
+        {
+          "kind": "row_column",
+          "value": "Savings|Balance (CAD)",
+          "container": "Member Detail / Accounts On File",
+          "ordinal": 2,
+          "confidence": 0.8,
+          "rationale": "Structural: cell in column #2 of the row keyed 'Savings', within 'Member Detail / Accounts On File'; the column header survives column moves and the target carries no record value."
+        },
+        {
+          "kind": "row_column",
+          "value": "Savings|",
+          "container": "Member Detail / Accounts On File",
+          "ordinal": 2,
+          "confidence": 0.6,
+          "rationale": "Structural index fallback for the same cell when the header text changes; the target carries no record value."
+        }
+      ]
+    },
+    "negate": false
+  },
+  "known_outcomes": [
+    {
+      "code": "MEMBER_NOT_FOUND",
+      "description": "No member exists with the supplied member ID. A legitimate result, not a failure.",
+      "detect": {
+        "kind": "text_present",
+        "value": "Record not found",
+        "target": null,
+        "negate": false
+      },
+      "terminal": true
+    },
+    {
+      "code": "MEMBER_ACCESS_DENIED",
+      "description": "The member record exists but this operator is not entitled to view it.",
+      "detect": {
+        "kind": "text_present",
+        "value": "not authorised to view this record",
+        "target": null,
+        "negate": false
+      },
+      "terminal": true
+    },
+    {
+      "code": "SESSION_EXPIRED",
+      "description": "The back-office session has expired and the operator must sign in again.",
+      "detect": {
+        "kind": "text_present",
+        "value": "session has timed out",
+        "target": null,
+        "negate": false
+      },
+      "terminal": true
+    }
+  ],
+  "recovery_rules": [
+    {
+      "code": "SESSION_INTERSTITIAL",
+      "description": "A 'your session will expire soon' interstitial stands between us and the target page. Dismissing it resumes the original request with its fields intact.",
+      "detect": {
+        "kind": "text_present",
+        "value": "will expire soon",
+        "target": null,
+        "negate": false
+      },
+      "remedy": "dismiss",
+      "dismiss_target": {
+        "description": "Continue button on the session interstitial",
+        "strategies": [
+          {
+            "kind": "role_name",
+            "value": "button|Continue",
+            "container": null,
+            "ordinal": null,
+            "confidence": 0.8,
+            "rationale": "The interstitial exposes exactly one Continue control."
+          }
+        ]
+      },
+      "max_attempts": 2,
+      "backoff_ms": 250
+    }
+  ],
+  "allowed_origins": [
+    "http://127.0.0.1:8099"
+  ],
+  "tenant_overrides": [],
+  "created_at": "2026-09-19T22:48:49.262503Z",
+  "discovered_by": "ollama/gemma4:31b-cloud",
+  "discovery_evidence": "evidence/20260919T224846Z-41c2dd"
+}

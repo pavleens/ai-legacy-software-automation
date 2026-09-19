@@ -1,0 +1,4 @@
+playwright==1.63.0
+pydantic==2.13.4
+Flask==3.0.3
+pytest==7.4.4

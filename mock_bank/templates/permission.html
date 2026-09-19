@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Not Authorised{% endblock %}
+{% block crumb %}ACCESS DENIED{% endblock %}
+{% block content %}
+<table width="600" cellpadding="6" cellspacing="0" border="1">
+  <tr><td class="sb4">Authorisation Check Failed</td></tr>
+  <tr class="rw0"><td class="wrn5">You are not authorised to view this record.</td></tr>
+  <tr class="rw1"><td class="f1 c2">ERR-0902: Operator TELLER07 lacks entitlement RESTRICTED_MBR_VIEW for record{% if member_id %} {{ member_id }}{% endif %}. This attempt has been written to the access log.</td></tr>
+</table>
+<br>
+<table width="600" cellpadding="4" cellspacing="0" border="0">
+<tr><td><a href="/app/search">Back to Search</a></td><td align="right" class="ft8">Entitlement source: RACF group BR0041-TELLER</td></tr>
+</table>
+{% endblock %}

@@ -1,0 +1,9 @@
+{
+  "reasoning": "",
+  "action": "type",
+  "handle": "f2|aria-ref=f2e19",
+  "text": "12345",
+  "option": null,
+  "risk": "safe_reversible",
+  "extract_as": null
+}

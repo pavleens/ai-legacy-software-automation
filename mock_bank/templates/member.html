@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Member Detail{% endblock %}
+{% block crumb %}MEMBER DETAIL &#8212; {{ member_id }}{% endblock %}
+{% block content %}
+<table width="640" cellpadding="4" cellspacing="0" border="1">
+  <tr><td class="sb4" colspan="4">Member Record</td></tr>
+  <tr class="rw0">
+    <td width="120" class="f1 c2">Member Name</td><td width="220"><b>{{ member.name }}</b></td>
+    <td width="100" class="f1 c2">Member ID</td><td>{{ member_id }}</td>
+  </tr>
+  <tr class="rw1">
+    <td class="f1 c2">Branch</td><td>{{ member.branch }}</td>
+    <td class="f1 c2">Status</td><td>{{ member.status }}</td>
+  </tr>
+  <tr class="rw0">
+    <td class="f1 c2">Joined</td><td>{{ member.joined }}</td>
+    <td class="f1 c2">Hold Flags</td><td>NONE</td>
+  </tr>
+</table>
+<br>
+<table width="640" cellpadding="4" cellspacing="0" border="1">
+  <tr><td class="sb4" colspan="4">Accounts On File</td></tr>
+  <tr class="rw1">
+    <td class="f1 c2"><b>Account No.</b></td>
+    <td class="f1 c2"><b>Type</b></td>
+    <td class="f1 c2" align="right"><b>Balance (CAD)</b></td>
+    <td class="f1 c2"><b>Opened</b></td>
+  </tr>
+  {% for a in member.accounts %}
+  <tr class="{{ 'rw0' if loop.index0 % 2 == 0 else 'rw1' }}">
+    <td><tt>{{ a.number }}</tt></td>
+    <td>{{ a.type }}</td>
+    <td align="right"><tt>{{ a.balance }}</tt></td>
+    <td>{{ a.opened }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<br>
+<table width="640" cellpadding="4" cellspacing="0" border="0">
+  <tr>
+    <td>
+      <form action="/app/subaccount/new" method="get">
+        <input type="hidden" name="member_id" value="{{ member_id }}">
+        <input type="submit" class="btn7" value="Open Sub-Account">
+      </form>
+    </td>
+    <td><a href="/app/search">Back to Search</a></td>
+    <td align="right"><span class="ft8">Record read from MBRMAST at 09:42:11</span></td>
+  </tr>
+</table>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Record Not Found{% endblock %}
+{% block crumb %}RECORD NOT FOUND{% endblock %}
+{% block content %}
+<table width="600" cellpadding="6" cellspacing="0" border="1">
+  <tr><td class="sb4">MBRMAST Lookup Failed</td></tr>
+  <tr class="rw0"><td class="wrn5">ERR-0044: Record not found.</td></tr>
+  <tr class="rw1"><td class="f1 c2">No member record exists for the identifier supplied{% if member_id %} ("{{ member_id }}"){% endif %}. Verify the digits and retry, or escalate to Branch Systems Support (ext. 4412).</td></tr>
+</table>
+<br>
+<table width="600" cellpadding="4" cellspacing="0" border="0">
+<tr><td><a href="/app/search">Back to Search</a></td><td align="right" class="ft8">Lookup key rejected by index MBRIDX01</td></tr>
+</table>
+{% endblock %}

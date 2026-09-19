@@ -1,0 +1,9 @@
+{"ts": "2026-09-19T23:13:12.499667Z", "seq": 1, "kind": "run_started", "run_kind": "replay", "capability_id": "lookup_member_balance", "goal": null}
+{"ts": "2026-09-19T23:13:13.118577Z", "seq": 2, "kind": "replay_started", "capability_id": "lookup_member_balance", "capability_version": 2, "tenant_id": null, "approval": "approved", "steps": 4}
+{"ts": "2026-09-19T23:13:13.161591Z", "seq": 3, "kind": "step", "index": 0, "step_id": "s000", "dir": "000-s000", "files": ["observation.json", "action.json"], "action": {"kind": "navigate", "handle": null, "text": "http://127.0.0.1:8099/app", "option": null}}
+{"ts": "2026-09-19T23:13:13.314202Z", "seq": 4, "kind": "step", "index": 1, "step_id": "s001", "dir": "001-s001", "files": ["observation.json", "action.json"], "action": {"kind": "type", "handle": "f2|aria-ref=f2e19", "text": "12345", "option": null}}
+{"ts": "2026-09-19T23:13:13.384474Z", "seq": 5, "kind": "step", "index": 2, "step_id": "s002", "dir": "002-s002", "files": ["observation.json", "action.json"], "action": {"kind": "click", "handle": "f2|aria-ref=f2e27", "text": null, "option": null}}
+{"ts": "2026-09-19T23:13:13.503587Z", "seq": 6, "kind": "escalated", "intervention_id": "iv_d199cf6ff086", "reason": "policy_requires_confirmation", "step_id": "s003", "detail": "Step s003 () is classified risky_irreversible. Step is classified irreversible and unattended risky actions are off"}
+{"ts": "2026-09-19T23:13:16.066527Z", "seq": 7, "kind": "control_reclaimed", "intervention_id": "iv_d199cf6ff086", "navigated": false, "duration_ms": 2562, "resolution": "performed"}
+{"ts": "2026-09-19T23:13:16.098392Z", "seq": 8, "kind": "replay_succeeded", "outputs": ["savings_balance"]}
+{"ts": "2026-09-19T23:13:16.127756Z", "seq": 9, "kind": "run_finished", "status": "success", "counts": {"events": 8, "steps": 3, "failure_signals": 0}}

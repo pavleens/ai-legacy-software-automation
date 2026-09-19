@@ -1,0 +1,546 @@
+{
+  "url": "http://127.0.0.1:8099/app",
+  "frame_urls": [
+    "http://127.0.0.1:8099/app",
+    "http://127.0.0.1:8099/app/nav",
+    "http://127.0.0.1:8099/app/search"
+  ],
+  "title": "Meridian Credit Union :: Member Services Terminal",
+  "elements": [
+    {
+      "handle": "f1|aria-ref=f1e4",
+      "role": "row",
+      "name": "MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e5",
+      "role": "cell",
+      "name": "MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e6",
+      "role": "row",
+      "name": "MENU",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e7",
+      "role": "cell",
+      "name": "MENU",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e14",
+      "role": "row",
+      "name": "FUNCTIONS",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e15",
+      "role": "cell",
+      "name": "FUNCTIONS",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e18",
+      "role": "link",
+      "name": "Member Search",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e21",
+      "role": "link",
+      "name": "Recent: 12345",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e24",
+      "role": "link",
+      "name": "Recent: 23456",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e27",
+      "role": "link",
+      "name": "Search",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e28",
+      "role": "row",
+      "name": "Statements (offline)",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e29",
+      "role": "cell",
+      "name": "Statements (offline)",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e30",
+      "role": "row",
+      "name": "Wire Desk (offline)",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e31",
+      "role": "cell",
+      "name": "Wire Desk (offline)",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / FUNCTIONS",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e34",
+      "role": "row",
+      "name": "BRANCH CONTEXT",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e35",
+      "role": "cell",
+      "name": "BRANCH CONTEXT",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e36",
+      "role": "row",
+      "name": "Branch | 0041 Riverbend",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e37",
+      "role": "cell",
+      "name": "Branch",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e38",
+      "role": "cell",
+      "name": "0041 Riverbend",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e39",
+      "role": "combobox",
+      "name": "Branch",
+      "value": "0041 Riverbend",
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e42",
+      "role": "button",
+      "name": "Submit",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / BRANCH CONTEXT",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e45",
+      "role": "row",
+      "name": "Help desk ext. 4412 Printer queue LPT2",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / Help desk ext. 4412 Printer queue LPT2",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e46",
+      "role": "cell",
+      "name": "Help desk ext. 4412 Printer queue LPT2",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation / Help desk ext. 4412 Printer queue LPT2",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e49",
+      "role": "row",
+      "name": "Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited.",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation",
+      "ordinal": 0
+    },
+    {
+      "handle": "f1|aria-ref=f1e50",
+      "role": "cell",
+      "name": "Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited.",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Navigation",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e4",
+      "role": "row",
+      "name": "MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 1
+    },
+    {
+      "handle": "f2|aria-ref=f2e5",
+      "role": "cell",
+      "name": "MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 1
+    },
+    {
+      "handle": "f2|aria-ref=f2e6",
+      "role": "row",
+      "name": "MEMBER SEARCH",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e7",
+      "role": "cell",
+      "name": "MEMBER SEARCH",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e14",
+      "role": "row",
+      "name": "Search — Primary Index",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Primary Index",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e15",
+      "role": "cell",
+      "name": "Search — Primary Index",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Primary Index",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e16",
+      "role": "row",
+      "name": "Member ID",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Primary Index",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e17",
+      "role": "cell",
+      "name": "Member ID",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Primary Index",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e19",
+      "role": "textbox",
+      "name": "Member ID",
+      "value": "",
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Primary Index",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e20",
+      "role": "row",
+      "name": "Include closed records | Yes",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Primary Index",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e21",
+      "role": "cell",
+      "name": "Include closed records",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Primary Index",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e22",
+      "role": "cell",
+      "name": "Yes",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Primary Index",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e23",
+      "role": "checkbox",
+      "name": "Include closed records",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Primary Index",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e27",
+      "role": "button",
+      "name": "Search",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Primary Index",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e28",
+      "role": "button",
+      "name": "Clear",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Primary Index",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e31",
+      "role": "row",
+      "name": "Search — Secondary Index (unavailable)",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Secondary Index (unavailable)",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e32",
+      "role": "cell",
+      "name": "Search — Secondary Index (unavailable)",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Secondary Index (unavailable)",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e33",
+      "role": "row",
+      "name": "Surname",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Secondary Index (unavailable)",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e34",
+      "role": "cell",
+      "name": "Surname",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Secondary Index (unavailable)",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e36",
+      "role": "textbox",
+      "name": "Surname",
+      "value": "",
+      "enabled": false,
+      "visible": true,
+      "container": "Member Search / Search — Secondary Index (unavailable)",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e37",
+      "role": "row",
+      "name": "Postal Code",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Secondary Index (unavailable)",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e38",
+      "role": "cell",
+      "name": "Postal Code",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Secondary Index (unavailable)",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e40",
+      "role": "textbox",
+      "name": "Postal Code",
+      "value": "",
+      "enabled": false,
+      "visible": true,
+      "container": "Member Search / Search — Secondary Index (unavailable)",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e44",
+      "role": "button",
+      "name": "Submit",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search / Search — Secondary Index (unavailable)",
+      "ordinal": 1
+    },
+    {
+      "handle": "f2|aria-ref=f2e47",
+      "role": "row",
+      "name": "Index rebuild last completed 03:14. Secondary index locked by batch job NIGHTLY_REIDX.",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e48",
+      "role": "cell",
+      "name": "Index rebuild last completed 03:14. Secondary index locked by batch job NIGHTLY_REIDX.",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search",
+      "ordinal": 0
+    },
+    {
+      "handle": "f2|aria-ref=f2e51",
+      "role": "row",
+      "name": "Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited.",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search",
+      "ordinal": 1
+    },
+    {
+      "handle": "f2|aria-ref=f2e52",
+      "role": "cell",
+      "name": "Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited.",
+      "value": null,
+      "enabled": true,
+      "visible": true,
+      "container": "Member Search",
+      "ordinal": 1
+    }
+  ],
+  "text_digest": "MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c MENU FUNCTIONS Member Search Recent: 12345 Recent: 23456 Search Statements (offline) Wire Desk (offline) BRANCH CONTEXT Branch 0041 Riverbend 0012 Mill Street 0007 Old Post Road Help desk ext. 4412 Printer queue LPT2 Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited. MERIDIAN CREDIT UNION · MEMBER SERVICES TERMINAL · REL 4.2.1c MEMBER SEARCH Search — Primary Index Member ID Include closed records Yes Search — Secondary Index (unavailable) Surname Postal Code Index rebuild last completed 03:14. Secondary index locked by batch job NIGHTLY_REIDX. Terminal session TS-40928 | Operator: TELLER07 | Branch 0041 | Unauthorised access is prohibited.",
+  "screenshot_path": null,
+  "elements_total": 53,
+  "elements_truncated": false,
+  "element_cap": 80
+}

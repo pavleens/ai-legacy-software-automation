@@ -1,0 +1,25 @@
+{
+  "run_id": "20260919T224913Z-a1169c",
+  "kind": "replay",
+  "capability_id": "lookup_member_balance",
+  "capability_version": 2,
+  "goal": null,
+  "inputs": {
+    "member_id": "12345"
+  },
+  "model": null,
+  "started_at": "2026-09-19T22:49:13.396605Z",
+  "ended_at": "2026-09-19T22:49:20.376000Z",
+  "status": "success",
+  "elapsed_ms": 6979,
+  "counts": {
+    "events": 10,
+    "steps": 5,
+    "failure_signals": 0
+  },
+  "element_cap": 80,
+  "redaction": {
+    "sensitive_value_count": 0,
+    "sensitive_keys": []
+  }
+}

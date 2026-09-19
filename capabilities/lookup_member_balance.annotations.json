@@ -1,0 +1,71 @@
+{
+  "_comment": [
+    "Known outcomes and recovery rules for lookup_member_balance, authored by the human who",
+    "reviews and approves the capability. They are DELIBERATELY not discovered.",
+    "",
+    "A discovery run sees exactly one path: the one it took. It found member 12345 and read a",
+    "balance. It has no way to know that 00000 yields 'Record not found', that 99999 yields a",
+    "permission denial, or that a session interstitial may appear at any point -- those are",
+    "properties of the institution's application, not of the trajectory. Asking a model to",
+    "enumerate them would be asking it to invent failure modes, and an invented outcome code is",
+    "worse than an absent one because callers will branch on it.",
+    "",
+    "So this is institutional knowledge, entered at review time by someone who knows the system,",
+    "and merged with `capability annotate`. It is the same reason approval is a human act.",
+    "",
+    "REMOVED: a TRANSIENT_SLOW_LOAD rule detecting element_absent 'Accounts On File'. It fired on the search screen, which legitimately has no accounts table, and exhausted its ceiling before the flow ever reached the member detail page. Recovery rules are artifact-global but their conditions are inherently step-local. Scoping rules to steps is named as future work in REPORT.md; until then, only write rules whose detect condition is impossible in any legitimate state of the flow, as SESSION_INTERSTITIAL is."
+  ],
+  "known_outcomes": [
+    {
+      "code": "MEMBER_NOT_FOUND",
+      "description": "No member exists with the supplied member ID. A legitimate result, not a failure.",
+      "detect": {
+        "kind": "text_present",
+        "value": "Record not found"
+      },
+      "terminal": true
+    },
+    {
+      "code": "MEMBER_ACCESS_DENIED",
+      "description": "The member record exists but this operator is not entitled to view it.",
+      "detect": {
+        "kind": "text_present",
+        "value": "not authorised to view this record"
+      },
+      "terminal": true
+    },
+    {
+      "code": "SESSION_EXPIRED",
+      "description": "The back-office session has expired and the operator must sign in again.",
+      "detect": {
+        "kind": "text_present",
+        "value": "session has timed out"
+      },
+      "terminal": true
+    }
+  ],
+  "recovery_rules": [
+    {
+      "code": "SESSION_INTERSTITIAL",
+      "description": "A 'your session will expire soon' interstitial stands between us and the target page. Dismissing it resumes the original request with its fields intact.",
+      "detect": {
+        "kind": "text_present",
+        "value": "will expire soon"
+      },
+      "remedy": "dismiss",
+      "dismiss_target": {
+        "description": "Continue button on the session interstitial",
+        "strategies": [
+          {
+            "kind": "role_name",
+            "value": "button|Continue",
+            "confidence": 0.8,
+            "rationale": "The interstitial exposes exactly one Continue control."
+          }
+        ]
+      },
+      "max_attempts": 2,
+      "backoff_ms": 250
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Session Timed Out{% endblock %}
+{% block crumb %}SESSION TERMINATED{% endblock %}
+{% block content %}
+<table width="600" cellpadding="6" cellspacing="0" border="1">
+  <tr><td class="sb4">Session Control</td></tr>
+  <tr class="rw0"><td class="wrn5">Your session has timed out. Please sign in again.</td></tr>
+  <tr class="rw1"><td class="f1 c2">ERR-0301: Terminal session TS-40928 was released after an idle interval. Unsaved form data has been discarded.</td></tr>
+  <tr class="rw0"><td><a href="/app">Sign in again</a></td></tr>
+</table>
+{% endblock %}

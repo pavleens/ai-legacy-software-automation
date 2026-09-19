@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Review Sub-Account{% endblock %}
+{% block crumb %}REVIEW &#8212; SUB-ACCOUNT APPLICATION{% endblock %}
+{% block content %}
+<table width="600" cellpadding="4" cellspacing="0" border="0">
+<tr><td class="f1 c3">Verify the details below before committing the record. No posting has occurred yet.</td></tr>
+</table><br>
+<table width="600" cellpadding="4" cellspacing="0" border="1">
+  <tr><td class="sb4" colspan="2">Pending Sub-Account</td></tr>
+  <tr class="rw0"><td width="190" class="f1 c2">Member</td><td><b>{{ member.name }}</b> ({{ member_id }})</td></tr>
+  <tr class="rw1"><td class="f1 c2">Account Type</td><td>{{ acct_type }}</td></tr>
+  <tr class="rw0"><td class="f1 c2">Nickname</td><td>{{ nickname }}</td></tr>
+  <tr class="rw1"><td class="f1 c2">Initial Deposit Amount</td><td><tt>{{ deposit }}</tt> CAD</td></tr>
+  <tr class="rw0"><td class="f1 c2">Posting Branch</td><td>{{ member.branch }}</td></tr>
+</table>
+<br>
+<table width="600" cellpadding="4" cellspacing="0" border="0">
+<tr>
+  <td>
+    <form action="/app/subaccount/confirm" method="post">
+      <input type="hidden" name="member_id" value="{{ member_id }}">
+      <input type="hidden" name="acct_type" value="{{ acct_type }}">
+      <input type="hidden" name="nickname" value="{{ nickname }}">
+      <input type="hidden" name="deposit" value="{{ deposit }}">
+      <input type="submit" class="btn7" value="Confirm">
+    </form>
+  </td>
+  <td>
+    <form action="/app/subaccount/new" method="get">
+      <input type="hidden" name="member_id" value="{{ member_id }}">
+      <input type="submit" class="btn7" value="Amend">
+    </form>
+  </td>
+  <td align="right" class="ft8">Batch window closes 16:30</td>
+</tr>
+</table>
+{% endblock %}

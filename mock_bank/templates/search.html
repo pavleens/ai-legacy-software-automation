@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Member Search{% endblock %}
+{% block crumb %}MEMBER SEARCH{% endblock %}
+{% block content %}
+{% if error %}
+<table cellpadding="4" cellspacing="0" border="0"><tr><td class="wrn5">{{ error }}</td></tr></table><br>
+{% endif %}
+<table width="620" cellpadding="4" cellspacing="0" border="1">
+  <tr><td class="sb4" colspan="2">Search &#8212; Primary Index</td></tr>
+  <form action="/app/member" method="get">
+  <tr class="rw0">
+    <td width="170" class="f1 c2"><label>Member ID</label></td>
+    <td><input type="text" name="member_id" size="18" maxlength="12" class="inp3"></td>
+  </tr>
+  <tr class="rw1">
+    <td class="f1 c2"><label>Include closed records</label></td>
+    <td><input type="checkbox" name="closed" value="Y" class="inp3"> Yes</td>
+  </tr>
+  <tr class="rw0">
+    <td>&nbsp;</td>
+    <td><input type="submit" class="btn7" value="Search"> &nbsp; <input type="reset" class="btn7" value="Clear"></td>
+  </tr>
+  </form>
+</table>
+<br>
+<table width="620" cellpadding="4" cellspacing="0" border="1">
+  <tr><td class="sb4" colspan="2">Search &#8212; Secondary Index (unavailable)</td></tr>
+  <form action="/app/search" method="get">
+  <tr class="rw0">
+    <td width="170" class="f1 c2"><label>Surname</label></td>
+    <td><input type="text" name="surname" size="18" class="inp3" disabled></td>
+  </tr>
+  <tr class="rw1">
+    <td class="f1 c2"><label>Postal Code</label></td>
+    <td><input type="text" name="postal" size="10" class="inp3" disabled></td>
+  </tr>
+  <tr class="rw0">
+    <td>&nbsp;</td>
+    <td><input type="submit" class="btn7" value="Submit"></td>
+  </tr>
+  </form>
+</table>
+<br>
+<table cellpadding="4" cellspacing="0" border="0">
+<tr><td class="ft8">Index rebuild last completed 03:14. Secondary index locked by batch job NIGHTLY_REIDX.</td></tr>
+</table>
+{% endblock %}

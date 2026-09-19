@@ -1,0 +1,33 @@
+{
+  "run_id": "20260919T231948Z-bbf998",
+  "kind": "replay",
+  "capability_id": "lookup_member_balance",
+  "capability_version": 2,
+  "goal": null,
+  "inputs": {
+    "member_id": "[REDACTED]"
+  },
+  "model": null,
+  "started_at": "2026-09-19T23:19:48.009522Z",
+  "ended_at": "2026-09-19T23:19:49.188931Z",
+  "status": "success",
+  "elapsed_ms": 1179,
+  "counts": {
+    "events": 8,
+    "steps": 4,
+    "failure_signals": 0
+  },
+  "element_cap": 80,
+  "evidence_policy": {
+    "synthetic_data": false,
+    "capture_screenshots": false,
+    "capture_page_source": false
+  },
+  "redaction": {
+    "sensitive_value_count": 1,
+    "sensitive_keys": [
+      "member_id",
+      "savings_balance"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{"ts": "2026-09-19T22:49:13.396931Z", "seq": 1, "kind": "run_started", "run_kind": "replay", "capability_id": "lookup_member_balance", "goal": null}
+{"ts": "2026-09-19T22:49:13.629644Z", "seq": 2, "kind": "replay_started", "capability_id": "lookup_member_balance", "capability_version": 2, "tenant_id": null, "approval": "approved", "steps": 4}
+{"ts": "2026-09-19T22:49:13.649306Z", "seq": 3, "kind": "step", "index": 0, "step_id": "s000", "dir": "000-s000", "files": ["observation.json", "action.json"], "action": {"kind": "navigate", "handle": null, "text": "http://127.0.0.1:8099/app", "option": null}}
+{"ts": "2026-09-19T22:49:13.719303Z", "seq": 4, "kind": "recovery_fired", "code": "SESSION_INTERSTITIAL", "remedy": "dismiss", "step_id": "s000", "attempt": 1, "max_attempts": 2}
+{"ts": "2026-09-19T22:49:14.068620Z", "seq": 5, "kind": "step", "index": 0, "step_id": "s000", "dir": "000-s000", "files": ["observation.json", "action.json"], "action": {"kind": "navigate", "handle": null, "text": "http://127.0.0.1:8099/app", "option": null}}
+{"ts": "2026-09-19T22:49:14.175285Z", "seq": 6, "kind": "step", "index": 1, "step_id": "s001", "dir": "001-s001", "files": ["observation.json", "action.json"], "action": {"kind": "type", "handle": "f2|aria-ref=f5e19", "text": "12345", "option": null}}
+{"ts": "2026-09-19T22:49:14.231990Z", "seq": 7, "kind": "step", "index": 2, "step_id": "s002", "dir": "002-s002", "files": ["observation.json", "action.json"], "action": {"kind": "click", "handle": "f2|aria-ref=f5e27", "text": null, "option": null}}
+{"ts": "2026-09-19T22:49:20.321824Z", "seq": 8, "kind": "step", "index": 3, "step_id": "s003", "dir": "003-s003", "files": ["observation.json", "action.json"], "action": {"kind": "read", "handle": "f2|aria-ref=f5e48", "text": null, "option": null}}
+{"ts": "2026-09-19T22:49:20.357577Z", "seq": 9, "kind": "replay_succeeded", "outputs": ["savings_balance"]}
+{"ts": "2026-09-19T22:49:20.376571Z", "seq": 10, "kind": "run_finished", "status": "success", "counts": {"events": 9, "steps": 5, "failure_signals": 0}}

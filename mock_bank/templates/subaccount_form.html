@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Open Sub-Account{% endblock %}
+{% block crumb %}OPEN SUB-ACCOUNT &#8212; {{ member_id }}{% endblock %}
+{% block content %}
+{% if error %}
+<table width="600" cellpadding="4" cellspacing="0" border="0"><tr><td class="wrn5">ERR-0117: {{ error }}</td></tr></table><br>
+{% endif %}
+<table width="600" cellpadding="4" cellspacing="0" border="1">
+  <tr><td class="sb4" colspan="2">Sub-Account Application &#8212; {{ member.name }}</td></tr>
+  <form action="/app/subaccount/review" method="post">
+  <input type="hidden" name="member_id" value="{{ member_id }}">
+  <tr class="rw0">
+    <td width="190" class="f1 c2"><label>Account Type</label></td>
+    <td>
+      <select name="acct_type" class="inp3">
+        <option value="">-- select --</option>
+        {% for t in types %}
+        <option value="{{ t }}" {% if t == acct_type %}selected{% endif %}>{{ t }}</option>
+        {% endfor %}
+      </select>
+    </td>
+  </tr>
+  <tr class="rw1">
+    <td class="f1 c2"><label>Nickname</label></td>
+    <td><input type="text" name="nickname" size="28" maxlength="30" class="inp3" value="{{ nickname }}"></td>
+  </tr>
+  <tr class="rw0">
+    <td class="f1 c2"><label>Initial Deposit Amount</label></td>
+    <td><input type="text" name="deposit" size="12" maxlength="12" class="inp3" value="{{ deposit }}"> CAD</td>
+  </tr>
+  <tr class="rw1">
+    <td class="f1 c2"><label>Statement Delivery</label></td>
+    <td>
+      <input type="radio" name="delivery" value="MAIL" checked> Mail
+      &nbsp;<input type="radio" name="delivery" value="HOLD"> Hold at branch
+    </td>
+  </tr>
+  <tr class="rw0">
+    <td>&nbsp;</td>
+    <td><input type="submit" class="btn7" value="Continue"> &nbsp; <input type="reset" class="btn7" value="Clear"></td>
+  </tr>
+  </form>
+</table>
+<br>
+<table width="600" cellpadding="4" cellspacing="0" border="0">
+<tr>
+  <td><a href="/app/member?member_id={{ member_id }}">Back to Member Detail</a></td>
+  <td align="right" class="ft8">Form SA-11 (rev. 09/2003)</td>
+</tr>
+</table>
+{% endblock %}

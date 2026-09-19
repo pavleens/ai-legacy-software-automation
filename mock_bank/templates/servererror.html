@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Application Error{% endblock %}
+{% block crumb %}APPLICATION ERROR{% endblock %}
+{% block content %}
+<table width="640" cellpadding="6" cellspacing="0" border="1">
+  <tr><td class="sb4">HTTP 500 &#8212; Internal Server Error</td></tr>
+  <tr class="rw0"><td class="wrn5">ABEND S0C4 &#8212; the transaction could not be completed.</td></tr>
+  <tr class="rw1"><td>
+    <tt>
+    MODULE ..... MBRSVC02<br>
+    ENTRY ...... {{ path }}<br>
+    RC ......... 0000000C<br>
+    REASON ..... 00000804<br>
+    DUMP ....... SYS1.DUMP07(SEQ 0412)<br>
+    </tt>
+  </td></tr>
+  <tr class="rw0"><td class="f1 c2">Quote the dump sequence number to Branch Systems Support (ext. 4412). Do not retry the posting more than twice.</td></tr>
+</table>
+<br>
+<table width="640" cellpadding="4" cellspacing="0" border="0">
+<tr><td><a href="/app/search">Back to Search</a></td></tr>
+</table>
+{% endblock %}

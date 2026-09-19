@@ -1,0 +1,9 @@
+{
+  "reasoning": "",
+  "action": "click",
+  "handle": "f2|aria-ref=f2e27",
+  "text": null,
+  "option": null,
+  "risk": "safe_reversible",
+  "extract_as": null
+}

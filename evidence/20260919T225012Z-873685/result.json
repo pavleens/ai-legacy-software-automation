@@ -1,0 +1,81 @@
+{
+  "run_id": "20260919T225012Z-873685",
+  "kind": "replay",
+  "status": "hard_failure",
+  "capability_id": "lookup_member_balance",
+  "capability_version": 2,
+  "finished_at": "2026-09-19T22:50:19.109621Z",
+  "result": {
+    "status": "hard_failure",
+    "capability_id": "lookup_member_balance",
+    "capability_version": 2,
+    "outputs": {},
+    "outcome_code": null,
+    "outcome_description": null,
+    "failure_kind": "target_not_found",
+    "failed_step_id": "s003",
+    "expected": "control 'Savings|Balance (CAD)' via ['row_column:Savings|Balance (CAD)@Member Detail / Accounts On File#2', 'row_column:Savings|@Member Detail / Accounts On File#2', 'role_name:cell|18,430.09', 'container_role_name:cell|18,430.09@Member Detail / Accounts On File', 'text:18,430.09', 'ordinal:cell|18,430.09#0']",
+    "observed": "no strategy resolved on 'http://127.0.0.1:8099/app' (40 elements observed)",
+    "escalation_id": null,
+    "trace": [
+      {
+        "step_id": "s000",
+        "intent": "Open the application at its recorded entry point.",
+        "action": "navigate",
+        "strategy_used": null,
+        "strategies_tried": [],
+        "ok": true,
+        "detail": "ok",
+        "recoveries": [],
+        "elapsed_ms": 102
+      },
+      {
+        "step_id": "s001",
+        "intent": "",
+        "action": "type",
+        "strategy_used": "label:Member ID",
+        "strategies_tried": [
+          "label:Member ID"
+        ],
+        "ok": true,
+        "detail": "ok",
+        "recoveries": [],
+        "elapsed_ms": 62
+      },
+      {
+        "step_id": "s002",
+        "intent": "",
+        "action": "click",
+        "strategy_used": "role_name:button|Search",
+        "strategies_tried": [
+          "role_name:button|Search"
+        ],
+        "ok": true,
+        "detail": "ok",
+        "recoveries": [],
+        "elapsed_ms": 6094
+      },
+      {
+        "step_id": "s003",
+        "intent": "",
+        "action": "read",
+        "strategy_used": null,
+        "strategies_tried": [
+          "row_column:Savings|Balance (CAD)@Member Detail / Accounts On File#2",
+          "row_column:Savings|@Member Detail / Accounts On File#2",
+          "role_name:cell|18,430.09",
+          "container_role_name:cell|18,430.09@Member Detail / Accounts On File",
+          "text:18,430.09",
+          "ordinal:cell|18,430.09#0"
+        ],
+        "ok": false,
+        "detail": "target_not_found: no strategy resolved on 'http://127.0.0.1:8099/app' (40 elements observed)",
+        "recoveries": [],
+        "elapsed_ms": 69
+      }
+    ],
+    "evidence_dir": "evidence/20260919T225012Z-873685",
+    "started_at": "2026-09-19T22:50:19.086484Z",
+    "elapsed_ms": 6328
+  }
+}

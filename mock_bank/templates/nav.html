@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Navigation{% endblock %}
+{% block crumb %}MENU{% endblock %}
+{% block content %}
+<table width="100%" cellpadding="3" cellspacing="0" border="0">
+  <tr><td class="sb4">FUNCTIONS</td></tr>
+  <tr class="rw0"><td><a href="/app/search" target="mainfrm">Member Search</a></td></tr>
+  <tr class="rw1"><td><a href="/app/member?member_id=12345" target="mainfrm">Recent: 12345</a></td></tr>
+  <tr class="rw0"><td><a href="/app/member?member_id=23456" target="mainfrm">Recent: 23456</a></td></tr>
+  <tr class="rw1"><td><a href="/app/search" target="mainfrm">Search</a></td></tr>
+  <tr class="rw0"><td>Statements (offline)</td></tr>
+  <tr class="rw1"><td>Wire Desk (offline)</td></tr>
+</table>
+<br>
+<table width="100%" cellpadding="3" cellspacing="0" border="1">
+  <tr><td class="sb4" colspan="2">BRANCH CONTEXT</td></tr>
+  <form action="/app/search" method="get" target="mainfrm">
+  <tr class="rw0">
+    <td class="f1 c2"><label>Branch</label></td>
+    <td>
+      <select name="branch" class="inp3">
+        <option value="0041">0041 Riverbend</option>
+        <option value="0012">0012 Mill Street</option>
+        <option value="0007">0007 Old Post Road</option>
+      </select>
+    </td>
+  </tr>
+  <tr class="rw1">
+    <td colspan="2"><input type="submit" class="btn7" value="Submit"></td>
+  </tr>
+  </form>
+</table>
+<br>
+<table width="100%" cellpadding="3" cellspacing="0" border="0">
+  <tr><td class="ft8">Help desk ext. 4412<br>Printer queue LPT2</td></tr>
+</table>
+{% endblock %}
