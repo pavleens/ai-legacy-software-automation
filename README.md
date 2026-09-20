@@ -1,26 +1,28 @@
 # AI Automation for Legacy Software Without APIs
 
-Many business-critical applications in healthcare, finance, insurance, government, and
-manufacturing have no usable API, stable selectors, or a modern frontend. This project
-demonstrates how AI can learn a workflow by operating that software through its user
-interface, then compile the successful run into a reusable automation.
+Many business-critical applications have no usable API, stable selectors, or modern
+frontend. This is true across industries, including healthcare, finance, accounting,
+retail, insurance, government, manufacturing, and logistics. This project demonstrates
+how AI can learn a workflow by operating legacy software through its user interface, then
+compile the successful run into a reusable automation.
 
 AI is used during discovery, where it observes the interface and decides what to do.
 Approved workflows then replay deterministically without a model, making repeated execution
 faster, cheaper, auditable, and easier to govern. When automation cannot proceed safely, it
 hands the same live session to a human operator.
 
-The included test environment is a **simulated legacy banking and finance application**. It
-contains generated data only and exists to reproduce difficult enterprise UI conditions;
-the project is not connected to any real financial institution or customer system. The
-same architecture is intended for comparable legacy workflows across other regulated and
-operational domains.
+The included test environment is **simulated legacy software** containing a synthetic
+financial workflow. It is one concrete example, not an industry-specific product. The UI
+contains generated data only and is not connected to any real organization, customer, or
+production system. The architecture applies equally to comparable legacy workflows in
+healthcare, finance, accounting, retail, insurance, government, manufacturing, logistics,
+and other operational environments where an API is missing or insufficient.
 
 ## See It Work
 
-![AI discovers a workflow in a simulated legacy banking and finance application](docs/ai-discovery-demo.gif)
+![AI discovers a workflow in simulated legacy software](docs/ai-discovery-demo.gif)
 
-In this real discovery run, `ollama/gemma4:31b-cloud` observes the simulated legacy UI and
+In this real discovery run, `ollama/gemma4:31b-cloud` observes the simulated legacy software and
 chooses `type -> click -> read -> done`. The compiler then produces a draft capability.
 After human approval, the same workflow can run repeatedly without a model.
 [Watch the MP4](docs/ai-discovery-demo.mp4).
@@ -185,7 +187,7 @@ capability_system/
   evidence/       append-only, privacy-aware run recorder
 capabilities/     reviewed capability artifacts
 evidence/         ten curated synthetic runs and their index
-mock_bank/        simulated legacy banking and finance UI with injectable faults
+mock_bank/        simulated legacy software fixture with a synthetic financial workflow
 scripts/          end-to-end handoff demo
 tests/            unit and browser integration tests
 ```

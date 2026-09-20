@@ -1,18 +1,20 @@
-# mock_bank — Meridian Credit Union Member Services Terminal (mock)
+# Simulated legacy software fixture
 
-A deliberately hostile, legacy-style stand-in for a credit-union back-office application.
-It exists so an LLM-driven browser agent can be exercised against a realistic "no clean
-DOM" surface, and so failure paths can be triggered on demand.
+A deliberately difficult, legacy-style software fixture containing a synthetic financial
+workflow. It lets an LLM-driven browser agent operate against a realistic "no clean DOM"
+surface and makes failure paths reproducible on demand. The workflow is illustrative; the
+automation architecture is not specific to finance and can support legacy software in
+healthcare, accounting, retail, insurance, government, manufacturing, and other domains.
 
 Entirely local. No real data, no real credentials, no outbound network calls, no database.
 All state is a Python dict and two counters in memory.
 
-## Why this app is deliberately hostile
+## Why this app is deliberately difficult
 
-Modern demo apps are a lie. They ship semantic HTML, stable `id`s, `data-testid` hooks and
-a single-purpose button per screen, so an agent that "works" against them has only proved
-it can read a well-labelled DOM. The applications that actually run bank back offices were
-written closer to 2003 than to 2023, and they look like this one: a `<frameset>` splitting
+Most modern demo apps ship semantic HTML, stable `id`s, `data-testid` hooks, and a
+single-purpose button per screen. Success against those interfaces does not establish that
+an agent can handle older enterprise software. Many long-lived operational applications
+have constraints like this fixture: a `<frameset>` splitting
 navigation from content, so the page an agent thinks it is on is really three documents and
 the URL bar tells you nothing about what is rendered; nested `<table>` elements doing layout
 rather than tabulating data, so visual adjacency and DOM adjacency are unrelated; class names
@@ -22,8 +24,8 @@ cell without a `for=`/`id=` pairing, so the label is legible to a human eye and 
 an accessibility-tree lookup. Visible text is duplicated on purpose — two "Submit" buttons in
 two different frames, "Search" as a nav link, a section heading and a button — so a naive
 text matcher has to disambiguate rather than click the first hit. The point is that a browser
-agent should have to ground itself the way a teller does, by reading the screen and reasoning
-about position and context, not by querying a hook that a friendly developer left behind.
+agent must ground itself by reading the screen and reasoning about position and context,
+rather than relying on purpose-built automation hooks.
 The fault injection exists for the same reason: session interstitials, timeouts, transient
 slow loads, permission walls and ugly 500s are the normal texture of these systems, and an
 agent's recovery behaviour is only observable if you can summon them on demand.

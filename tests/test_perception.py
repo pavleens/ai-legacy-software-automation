@@ -4,7 +4,7 @@ These are integration tests on purpose. The whole value of this module is in wha
 Chromium's accessibility tree actually reports for a `<frameset>` app whose labels are
 unassociated table cells, and no unit test with a stubbed tree can tell you whether that
 is right. So each test launches the real server, drives a real browser, and asserts on
-what a real teller would see.
+what a human operator would see.
 
 The fixtures start `mock_bank/server.py` on a free port and tear it down; nothing here
 touches a shared port or a shared browser, so the file is safe to run on its own.
@@ -136,7 +136,18 @@ def test_observe_reads_child_frames_not_just_the_main_frame(on_app: WebSurface) 
     assert _find(obs, "link", "Member Search"), "nav-frame link not perceived"
 
     # The frameset's own title is the main page title.
-    assert "Meridian" in obs.title
+    assert "Simulated Legacy Software" in obs.title
+
+
+def test_ui_is_unmistakably_labeled_as_a_simulation(on_app: WebSurface) -> None:
+    """Public demos must not be mistaken for a real organization or customer system."""
+    obs = on_app.observe()
+    rendered_identity = f"{obs.title}\n{obs.text_digest}".lower()
+
+    assert "simulated legacy software" in rendered_identity
+    assert "demo only" in rendered_identity
+    assert "synthetic data" in rendered_identity
+    assert "credit union" not in rendered_identity
 
 
 # ======================================================================================

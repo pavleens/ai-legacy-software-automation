@@ -1,9 +1,9 @@
 """
-MERIDIAN CREDIT UNION -- Member Services Terminal (MOCK)
+SIMULATED LEGACY SOFTWARE -- Synthetic Financial Workflow (MOCK)
 
-A deliberately hostile, legacy-style stand-in for a credit-union back-office
-application. Framesets, table layout, no id/data-* hooks. Entirely local,
-no real data, no real credentials, no outbound network calls.
+A deliberately difficult legacy-software fixture with a synthetic financial
+workflow. Framesets, table layout, no id/data-* hooks. Entirely local, with
+no real data, credentials, organizations, or outbound network calls.
 
 Run:  /opt/anaconda3/bin/python3.12 mock_bank/server.py
 Port: 8099 (override with PORT env var). Binds 127.0.0.1 only.

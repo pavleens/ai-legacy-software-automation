@@ -83,7 +83,7 @@ from capability_system.replay.outcomes import FailureKind, ReplayResult, StepTra
 from capability_system.safety.policy import Decision, PolicyEngine, redact
 
 # Defaults chosen to be overridable per instance rather than per call: a test wants a
-# 50ms wait budget, a real bank screen wants seconds, and neither should require a
+# 50ms wait budget, a slow legacy screen wants seconds, and neither should require a
 # different code path.
 DEFAULT_WAIT_TIMEOUT_S = 10.0
 DEFAULT_POLL_INTERVAL_S = 0.1
