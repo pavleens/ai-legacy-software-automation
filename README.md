@@ -18,6 +18,26 @@ production system. The architecture applies equally to comparable legacy workflo
 healthcare, finance, accounting, retail, insurance, government, manufacturing, logistics,
 and other operational environments where an API is missing or insufficient.
 
+## How a Forward-Deployed Team Would Use This
+
+The starting point is the customer workflow, not the technology. A forward-deployed
+engineer first works with employees to understand the task, its inputs, the expected result,
+and the points where a person must stay in control. If the existing software has no usable
+API or MCP integration, the model can learn the task by operating the same interface the
+employee already uses.
+
+That successful run is then turned into a reviewed, repeatable automation. The model is used
+to discover the workflow, but it does not remain in the execution path for routine replay.
+This gives the customer a defined deliverable with clear inputs, outcomes, approval points,
+and an audit trail instead of an agent that improvises every time.
+
+In a production deployment, the browser worker could run inside the customer's environment
+or in an approved cloud environment, depending on its security and data requirements. The
+reviewed capability could then be invoked by an employee-facing agent through email, Teams,
+or another workflow system. This repository implements the discovery, approval, replay,
+evidence, and human-handoff layers; those channel and production-deployment integrations are
+deliberately outside the prototype's scope.
+
 ## See It Work
 
 ![AI discovers a workflow in simulated legacy software](docs/ai-discovery-demo.gif)
