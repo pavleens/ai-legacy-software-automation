@@ -457,6 +457,7 @@ class WebSurface:
                 if closer is not None:
                     closer.close()
             except Exception:
+                # Teardown must not mask the original browser or workflow failure.
                 pass
         if video is not None:
             try:
@@ -467,6 +468,7 @@ class WebSurface:
             if self._pw is not None:
                 self._pw.stop()
         except Exception:
+            # Playwright may already be stopped after a failed browser launch.
             pass
         self._pw = self._browser = self._context = self._page = None
         self._scan = []
@@ -1066,6 +1068,7 @@ class WebSurface:
                 if self._resolve_one(strategy) == handle:
                     ladder.append(strategy)
             except PWError:
+                # A candidate that cannot resolve is intentionally omitted from the ladder.
                 pass
 
         content_named = el.is_content_named()

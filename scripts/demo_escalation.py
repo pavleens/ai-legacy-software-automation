@@ -20,7 +20,6 @@ Run:  python3 scripts/demo_escalation.py --headed
 from __future__ import annotations
 
 import argparse
-import json
 import subprocess
 import sys
 import time
@@ -35,11 +34,8 @@ from capability_system.artifact.schema import (  # noqa: E402
     RiskClass,
 )
 from capability_system.escalation.control import (  # noqa: E402
-    ControlOwner,
     FileBroker,
-    InterventionRequest,
     SessionController,
-    StuckReason,
 )
 from capability_system.evidence.recorder import EvidenceRecorder  # noqa: E402
 from capability_system.perception.web import WebSurface  # noqa: E402

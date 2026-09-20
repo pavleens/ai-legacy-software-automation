@@ -63,7 +63,6 @@ DEFAULT_ELEMENT_CAP = 80
 """Elements kept per observation. Generous enough to contain a realistic screen's
 actionable controls, small enough that an evidence directory stays reviewable by hand."""
 
-_REDACTED = "[REDACTED]"
 _SLUG_RE = re.compile(r"[^a-z0-9]+")
 
 
