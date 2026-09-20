@@ -1,15 +1,18 @@
-# AI Automation for Legacy Software Without APIs
+# Agentic Workflow Automation for Legacy Software Without APIs
 
 Many business-critical applications have no usable API, stable selectors, or modern
 frontend. This is true across industries, including healthcare, finance, accounting,
 retail, insurance, government, manufacturing, and logistics. This project demonstrates
-how AI can learn a workflow by operating legacy software through its user interface, then
-compile the successful run into a reusable automation.
+how an AI agent can move work through that software using a scoped browser capability built
+with Playwright and Chromium.
 
-AI is used during discovery, where it observes the interface and decides what to do.
-Approved workflows then replay deterministically without a model, making repeated execution
-faster, cheaper, auditable, and easier to govern. When automation cannot proceed safely, it
-hands the same live session to a human operator.
+The process starts with the employee's real workflow: its inputs, handoffs, decisions,
+exceptions, expected outcome, and points where a person must stay in control. During
+discovery, an AI model works through the same interface the employee uses. The successful
+interaction is compiled into a draft capability for human review. Once approved, routine
+execution replays deterministically without a model, making it faster, cheaper, auditable,
+and easier to govern. When the capability cannot proceed safely, it hands the same live
+session to a human operator.
 
 The included test environment is **simulated legacy software** containing a synthetic
 financial workflow. It is one concrete example, not an industry-specific product. The UI
@@ -21,22 +24,23 @@ and other operational environments where an API is missing or insufficient.
 ## How a Forward-Deployed Team Would Use This
 
 The starting point is the customer workflow, not the technology. A forward-deployed
-engineer first works with employees to understand the task, its inputs, the expected result,
-and the points where a person must stay in control. If the existing software has no usable
-API or MCP integration, the model can learn the task by operating the same interface the
-employee already uses.
+engineer first works with employees to understand where work slows down, how decisions and
+handoffs happen, which exceptions matter, what success looks like, and where human approval
+is required. If the existing software has no usable API or MCP integration, Playwright and
+Chromium provide the interface through which the discovery model can perform the task.
 
-That successful run is then turned into a reviewed, repeatable automation. The model is used
-to discover the workflow, but it does not remain in the execution path for routine replay.
-This gives the customer a defined deliverable with clear inputs, outcomes, approval points,
-and an audit trail instead of an agent that improvises every time.
+That successful run is then compiled into a reviewed, scoped browser capability. The model
+is used to discover the workflow, but it does not remain in the execution path for routine
+replay. This gives an agent a governed way to move work through the existing system, with
+defined inputs, outcomes, approval points, and an audit trail instead of improvising every
+time.
 
-In a production deployment, the browser worker could run inside the customer's environment
-or in an approved cloud environment, depending on its security and data requirements. The
-reviewed capability could then be invoked by an employee-facing agent through email, Teams,
-or another workflow system. This repository implements the discovery, approval, replay,
-evidence, and human-handoff layers; those channel and production-deployment integrations are
-deliberately outside the prototype's scope.
+The intended production pattern is to run the browser worker inside the customer's
+environment, keep sensitive actions behind human approval, and preserve an auditable record
+of every run. An employee-facing agent could invoke the reviewed capability through email,
+Teams, or another workflow system. This repository implements the discovery, approval,
+replay, evidence, and human-handoff layers; those channel and production-deployment
+integrations are deliberately outside the prototype's scope.
 
 ## See It Work
 
