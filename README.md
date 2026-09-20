@@ -27,6 +27,9 @@ chooses `type -> click -> read -> done`. The compiler then produces a draft capa
 After human approval, the same workflow can run repeatedly without a model.
 [Watch the MP4](docs/ai-discovery-demo.mp4).
 
+The presentation edit adds cursor motion and colored target emphasis for readability. The
+underlying browser actions and result come from the real model-driven discovery run.
+
 ```text
 goal -> discovery model -> draft artifact -> human approval -> deterministic replay
               |                                      |
