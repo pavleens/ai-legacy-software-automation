@@ -9,6 +9,11 @@ contains `manifest.json` (run metadata, redacted),
 evidence), `steps/NNN-*/` (observation, action, reasoning, screenshot per step) and
 `result.json`.
 
+These append-only runs predate the current explicit **Simulated Legacy Software** identity
+and therefore retain an earlier fictional organization label in their captured UI text.
+They have not been rewritten because doing so would falsify the audit record. All names,
+records, balances, and organization labels in these snapshots are generated test data.
+
 The discovery runs used the hosted `ollama/gemma4:31b-cloud` model with explicit consent.
 That is remote inference, not local inference. Replay runs have no model at all, which is
 why their `model` field is empty.
